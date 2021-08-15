@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <style>
+        body {
+            padding-top: 45px;
+        }
+        #gen {
+            padding-bottom: 30px;
+        }
+    </style>
+
+    <title>Sua Massa</title>
+</head>
+
+<body>
+    <section class="card container col-3 border-danger">
+        <h1 class="card-header text-center border-danger">IMC</h1>
+        <div class="card-body row">
+            <div class="mb-3">
+                <label class="form-label h5">Altura(m):</label><br>
+                <input class="form-control border-danger" id="altr" type="number" placeholder="Digite a altura"><br>
+            </div>
+            <div class="mb-3">
+                <label class="form-label h5">Peso(Kg):</label><br>
+                <input class="form-control border-danger" id="peso" type="number" placeholder="Digite a peso"><br>
+            </div>
+            <div id="gen">
+                <p class="h5">Sexo:</p>
+                <input name="sexo" value="mas" type="radio">
+                <label>Masculino</label>
+                <input name="sexo" value="mas" type="radio">
+                <label>Feminino</label><br>
+            </div>
+            <div class="mb-3">
+                <label class="form-label h5">Condição:</label><br>
+                <input class="form-control border-danger" id="condicao" type="text"><br>
+            </div>
+            <button class="btn btn-danger btn-outline-secondary text-dark fw-bold border-danger" onclick="calculoIMC()">Calculando o IMC</button>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
